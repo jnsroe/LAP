@@ -1,0 +1,32 @@
+<?php
+/**
+ * @var \App\View\AppView $this
+ * @var \App\Model\Entity\Anrede $anrede
+ */
+?>
+<div class="row">
+    <aside class="column">
+        <div class="side-nav">
+            <h4 class="heading"><?= __('Actions') ?></h4>
+            <?= $this->Form->postLink(
+                __('Delete'),
+                ['action' => 'delete', $anrede->id],
+                ['confirm' => __('Are you sure you want to delete # {0}?', $anrede->id), 'class' => 'side-nav-item']
+            ) ?>
+            <?= $this->Html->link(__('List Anrede'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
+        </div>
+    </aside>
+    <div class="column-responsive column-80">
+        <div class="anrede form content">
+            <?= $this->Form->create($anrede) ?>
+            <fieldset>
+                <legend><?= __('Edit Anrede') ?></legend>
+                <?php
+                    echo $this->Form->control('Name');
+                ?>
+            </fieldset>
+            <?= $this->Form->button(__('Submit')) ?>
+            <?= $this->Form->end() ?>
+        </div>
+    </div>
+</div>
