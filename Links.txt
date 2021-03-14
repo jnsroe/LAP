@@ -1,0 +1,5 @@
+workench 6.3.6: https://dev.mysql.com/downloads/workbench/
+PHP Storm: https://www.jetbrains.com/phpstorm/download/#section=windows
+XAMPP: https://www.apachefriends.org/de/download.html 7.3.27
+php 7.3.27: https://windows.php.net/download#php-7.3
+maria db: https://downloads.mariadb.org
